@@ -1,0 +1,377 @@
+<!Document html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" Href="css/advertisement.css">
+<script Src="scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+<script Src="scripts/advertisement.js" charset="utf-8"></script>
+<title>
+</title>
+</head>
+<body>
+<script type="text/javascript">
+  var data1 = {
+    "Time": "2014-07-12 10:00:00",
+    "AdID": 111,
+    "MaxNum": 5,
+    "MaxShowNum": 4,
+    "UnsidleTime": 2000,
+    "Method": 1,
+    "IsRandom": false,
+    "Width": 780,
+    "Height": 58,
+    "List": [
+        {
+            "AdIndex": 1,
+            "AdLevel": 3,
+            "StartTime": "2014-07-23 10:00:00",
+            "EndTime": "2014-09-04 23:59:59",
+            "CreateTime":"2014-09-04 23:59:59",
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test1.jpg",
+            "ImageID": 121
+        },
+        {
+            "AdIndex": 2,
+            "AdLevel": 3,
+            "StartTime": "2014-07-31 10:00:00",
+            "EndTime": "2014-09-31 23:59:59",
+            "CreateTime":"2014-09-04 23:59:59",
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test2.jpg",
+            "ImageID": 122
+        },
+        {
+            "AdIndex": 1,
+            "AdLevel": 3,
+            "StartTime": "2014-07-31 10:00:00",
+            "EndTime": "2014-09-16 23:59:59",
+            "CreateTime":"2014-09-04 23:59:59",
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test3.jpg",
+            "ImageID": 123
+        },
+        {
+            "AdIndex": 1,
+            "AdLevel": 3,
+            "StartTime": "2014-07-31 10:00:00",
+            "EndTime": "2014-09-31 23:59:59",
+            "CreateTime":"2014-09-04 23:59:59",
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test3.jpg",
+            "ImageID": 124
+        },
+        {
+            "AdIndex": 1,
+            "AdLevel": 3,
+            "StartTime": "2014-07-31 10:00:00",
+            "EndTime": "2014-09-10 23:59:59",
+            "CreateTime":"2014-09-04 23:59:59",
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test4.jpg",
+            "ImageID": 125
+        },
+        {
+            "AdIndex": 0,
+            "AdLevel": 3,
+            "StartTime": "2014-07-31 10:00:00",
+            "EndTime": "2014-09-31 23:59:59",
+            "CreateTime":"2014-09-04 23:59:59",
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test4.jpg",
+            "ImageID": 126
+        },
+        {
+            "AdIndex": 4,
+            "AdLevel": 3,
+            "StartTime": "2014-07-31 10:00:00",
+            "EndTime": "2014-09-31 23:59:59",
+            "CreateTime":"2014-09-04 23:59:59",
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test1.jpg",
+            "ImageID": 127
+        }
+    ],
+    "DefaultList":[
+      {
+            "AdIndex": 4,
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test1.jpg",
+            "ImageID": 127
+      },
+      {
+            "AdIndex": 4,
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test1.jpg",
+            "ImageID": 127
+      },
+      {
+            "AdIndex": 4,
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test1.jpg",
+            "ImageID": 127
+      }
+    ],
+    "SizeList":
+      {
+            "AdIndex": 4,
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test1.jpg",
+            "ImageID": 127
+      }
+    
+};
+var data2 = {
+    "Time": "2014-07-12 10:00:00",
+    "AdID": 111,
+    "MaxNum": 5,
+    "MaxShowNum": 5,
+    "UnsidleTime": 2000,
+    "Method": 2,
+    "IsRandom": false,
+    "Width": 780,
+    "Height": 58,
+    "List": [
+        {
+            "AdIndex": 1,
+            "AdLevel": 3,
+            "StartTime": "2014-07-23 10:00:00",
+            "EndTime": "2014-09-04 23:59:59",
+            "CreateTime":"2014-09-04 23:59:59",
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test1.jpg",
+            "ImageID": 121
+        },
+        {
+            "AdIndex": 2,
+            "AdLevel": 3,
+            "StartTime": "2014-07-31 10:00:00",
+            "EndTime": "2014-09-31 23:59:59",
+            "CreateTime":"2014-09-04 23:59:59",
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test2.jpg",
+            "ImageID": 122
+        },
+        {
+            "AdIndex": 1,
+            "AdLevel": 3,
+            "StartTime": "2014-07-31 10:00:00",
+            "EndTime": "2014-09-16 23:59:59",
+            "CreateTime":"2014-09-04 23:59:59",
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test3.jpg",
+            "ImageID": 123
+        },
+        {
+            "AdIndex": 1,
+            "AdLevel": 3,
+            "StartTime": "2014-07-31 10:00:00",
+            "EndTime": "2014-09-31 23:59:59",
+            "CreateTime":"2014-09-04 23:59:59",
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test3.jpg",
+            "ImageID": 124
+        },
+        {
+            "AdIndex": 1,
+            "AdLevel": 3,
+            "StartTime": "2014-07-31 10:00:00",
+            "EndTime": "2014-09-31 23:59:59",
+            "CreateTime":"2014-09-04 23:59:59",
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test4.jpg",
+            "ImageID": 125
+        },
+        {
+            "AdIndex": 0,
+            "AdLevel": 3,
+            "StartTime": "2014-07-31 10:00:00",
+            "EndTime": "2014-09-31 23:59:59",
+            "CreateTime":"2014-09-04 23:59:59",
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test4.jpg",
+            "ImageID": 126
+        },
+        {
+            "AdIndex": 4,
+            "AdLevel": 3,
+            "StartTime": "2014-07-31 10:00:00",
+            "EndTime": "2014-09-31 23:59:59",
+            "CreateTime":"2014-09-04 23:59:59",
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test1.jpg",
+            "ImageID": 127
+        }
+    ],
+    "DefaultList":[
+      {
+            "AdIndex": 4,
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test1.jpg",
+            "ImageID": 127
+      },
+      {
+            "AdIndex": 4,
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test1.jpg",
+            "ImageID": 127
+      },
+      {
+            "AdIndex": 4,
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test1.jpg",
+            "ImageID": 127
+      }
+    ],
+    "SizeList":
+      {
+            "AdIndex": 4,
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test1.jpg",
+            "ImageID": 127
+      }
+    
+};
+var data3 = {
+    "Time": "2014-07-15 10:04:00",
+    "AdID": 111,
+    "MaxNum": 5,
+    "MaxShowNum": 4,
+    "UnsidleTime": 4000,
+    "Method": 3,
+    "IsRandom": false,
+    "Width": 780,
+    "Height":58,
+    "List": [
+        {
+            "AdIndex": 0,
+            "AdLevel": 3,
+            "StartTime": "2014-07-23 10:00:00",
+            "EndTime": "2014-09-31 23:59:59",
+            "CreateTime":"2014-09-09 23:59:59",
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test4.jpg",
+            "ImageID": 121
+        },
+        {
+            "AdIndex": 2,
+            "AdLevel": 3,
+            "StartTime": "2014-07-31 10:00:00",
+            "EndTime": "2014-09-31 23:59:59",
+            "CreateTime":"2014-09-04 23:59:59",
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test2.jpg",
+            "ImageID": 122
+        },
+        {
+            "AdIndex": 1,
+            "AdLevel": 3,
+            "StartTime": "2014-07-31 10:00:00",
+            "EndTime": "2014-09-16 23:59:59",
+            "CreateTime":"2014-09-04 23:59:59",
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test3.jpg",
+            "ImageID": 123
+        },
+        {
+            "AdIndex": 1,
+            "AdLevel": 3,
+            "StartTime": "2014-07-31 10:00:00",
+            "EndTime": "2014-09-31 23:59:59",
+            "CreateTime":"2014-09-04 23:59:59",
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test3.jpg",
+            "ImageID": 124
+        },
+        {
+            "AdIndex": 1,
+            "AdLevel": 3,
+            "StartTime": "2014-07-31 10:00:00",
+            "EndTime": "2014-09-31 23:59:59",
+            "CreateTime":"2014-09-01 23:59:59",
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test1.jpg",
+            "ImageID": 125
+        },
+        {
+            "AdIndex": 0,
+            "AdLevel": 3,
+            "StartTime": "2014-07-31 10:00:00",
+            "EndTime": "2014-09-30 23:59:59",
+            "CreateTime":"2014-09-06 23:59:59",
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test2.jpg",
+            "ImageID": 126
+        },
+        {
+            "AdIndex": 4,
+            "AdLevel": 3,
+            "StartTime": "2014-07-31 10:00:00",
+            "EndTime": "2014-09-31 23:59:59",
+            "CreateTime":"2014-09-04 23:59:59",
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test1.jpg",
+            "ImageID": 127
+        }
+    ],
+    "DefaultList":[
+      {
+            "AdIndex": 4,
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test1.jpg",
+            "ImageID": 127
+      },
+      {
+            "AdIndex": 4,
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test1.jpg",
+            "ImageID": 127
+      },
+      {
+            "AdIndex": 4,
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test1.jpg",
+            "ImageID": 127
+      }
+    ],
+    "SizeList":
+      {
+            "AdIndex": 4,
+            "Href": "http://192.168.3.107:100",
+            "Src": "../images/test1.jpg",
+            "ImageID": 127
+      }
+    
+}
+</script>
+ <div id="advert1" class="m-adArea"></div>
+ <div id="advert2" class="m-adArea"></div>
+ <div id="advert3" class="m-adArea"></div>
+<div style="display:none;">
+<script src="http://s16.cnzz.com/stat.php?id=5128851&web_id=5128851" language="JavaScript"></script>
+</div>
+
+
+<script>
+    $(function(){
+    var model1 = new AdvertModel(data1);
+var view1 = new AdvertView($("#advert1"),model1.current);
+var controller1 = new AdvertController(model1,view1);
+  view1.init();
+  view1.start();
+
+var model2 = new AdvertModel(data2);
+var view2 = new AdvertView($("#advert2"),model2.current);
+var controller2 = new AdvertController(model2,view2);
+  view2.init();
+  view2.start();
+
+var model3 = new AdvertModel(data3);
+var view3 = new AdvertView($("#advert3"),model3.current);
+var controller3 = new AdvertController(model3,view3);
+   view3.init();
+   view3.start();
+  })
+</script>
+</script>
+</body>
+</html> 

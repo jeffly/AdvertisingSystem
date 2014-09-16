@@ -63,6 +63,7 @@ version:1.0
 
         this.config.targetEle.empty();
         this.config.targetEle.append(strContent);
+
         if(arr.length > 1) {
           this.config.targetEle.append(strTab);
         }
@@ -71,6 +72,7 @@ version:1.0
                               '<span class="tcmm_text"><i></i><strong>同城妈妈提供的广告</strong></span></a>';
            this.config.targetEle.append(tcmmStr);
         }    
+
         this.config.hoverEle = this.config.targetEle.find('.m_tab');
         this.config.hoverEle.find("span").eq(this.config.Index).addClass("cur");
         this.config.contentEle = this.config.targetEle.find('.m_content');
@@ -177,7 +179,7 @@ version:1.0
           case 4:
                this.congfig.contentEle.animate({ "right":"-"+index*100+"%"}, this.config.Speed);
                break;
-           default: 
+          default: 
     	 	       this.congfig.contentEle.animate({ "left":"-"+index*100+"%"}, this.config.Speed);
     	 }
     },
@@ -262,7 +264,7 @@ version:1.0
             _data = [],
             i = 0;
         for(;i < len ; i++){
-             var starttime = this.formatDateToMillisecond(data[i].StartTime)
+             var starttime = this.formatDateToMillisecond(data[i].StartTime);
              var endtime = this.formatDateToMillisecond(data[i].EndTime);
            //  var  time = this.formatDateToMillisecond(this.serverTime);
              var time = new Date().getTime() + bufferTime;
@@ -466,7 +468,7 @@ version:1.0
     this._model = model;
     this._view = view;
     this.updateTime = updateTime || 60;
-    this.bufferTime =  10*60;
+    this.bufferTime =  (Math.floor(Math.random()*10) + 1)*60; //10分钟以内缓存随机
     this.waitTime = this.updateTime*60;
     //this.currentTime = new Date(model.serverTime.replace(new RegExp("-","gm"),"/"));
     this.currentTime = new Date();
@@ -493,12 +495,10 @@ version:1.0
     } else {
 
     };
-  console.log(this.remainTime);
     if( this.remainTime == 0 ) {
 
         this._view.stop();
         this._view.config = $.extend(this._view.config,this._model.buffer || {});
-        console.log(this._view.config)
         this._view.init();
         this._view.start();
         this.remainTime = this.waitTime;

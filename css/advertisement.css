@@ -1,0 +1,33 @@
+/*base*/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font:12px / 1.5 tahoma, arial, '宋体', \5b8b\4f53; }
+h1, h2, h3, h4, h5, h6 { font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:courier new, courier, monospace; }
+small { font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub { vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0 none; }
+button, input, select, textarea { font-size:100%; outline:none; }
+table { border-collapse:collapse; border-spacing:0; }
+.ellipsis { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.clearfix:before, .clearfix:after { content:""; display:table }
+.clearfix:after { clear:both }
+.clearfix { zoom:1 }
+.m-adArea {position: relative;margin: 0px auto;overflow: hidden;}
+.m-adArea ul{font-size: 0px}
+.m-adArea ul li{}
+.m-adArea ul li a{display: block;text-align: center;}
+.m-adArea ul li img{vertical-align: middle;}
+.m-adArea .tab{position: absolute;bottom: 0px;right: 0px;padding-bottom: 10px;display: inline-block;_display:inline;_zoom:1;}
+.m-adArea .tab span{display:inline-block;margin-left: 0px;margin-right: 10px;width: 11px;height: 11px;line-height: 1px;text-align: center;cursor: pointer;font-size: 1px;font-weight: bold;color: #666;background-color: #E6E6E6;border-radius: 20px 20px 20px 20px; zoom:1;}
+.m-adArea .tab .cur{background-color: #F25555}  
+.m-adArea .tcmm_ad{position:absolute;right:0;bottom:0;cursor:pointer;text-decoration:none;}
+.tcmm_ad b{float:left;width:28px;height:19px;background:url(../images/supplyByTCMM.png) no-repeat 0 0;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/supplyByTCMM.png');}
+.tcmm_text{display:none;position:relative;float:left;height:19px;font:normal 12px/19px "\5B8B\4F53",arial,sans-serif;color:white;}
+.tcmm_text i{display:block;width:100%;height:100%;position:absolute;top:0;left:0;background:black;opacity:0.5;filter:alpha(opacity=50);}
+.tcmm_text strong{display:block;position:relative;margin:0 4px 0 2px;font-weight:normal;}
